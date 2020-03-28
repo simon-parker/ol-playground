@@ -4,12 +4,12 @@
     "ol": "^6.2.1"
   },
   "devDependencies": {
-    "@types/ol": "^6.1.0",
+    "@types/ol": "^6.2.0",
     "parcel": "^1.12.4",
     "typescript": "^3.8.3"
   },
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build --experimental-scope-hoisting --public-url . index.html"
+    "start": "parcel --target=browser 'src/*/*.html'",
+    "build": "parcel build --experimental-scope-hoisting --public-url . **/*.html"
   }
 }
