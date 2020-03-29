@@ -9,7 +9,7 @@
     "typescript": "^3.8.3"
   },
   "scripts": {
-    "start": "parcel --target=browser 'src/*/*.html'",
-    "build": "parcel build --experimental-scope-hoisting --public-url . **/*.html"
+    "start": "parcel --target=browser 'src/*/*.html' 'src/*/sw.ts'",
+    "build": "parcel build --experimental-scope-hoisting --public-url . **/*.html 'src/*/sw.js'"
   }
 }
