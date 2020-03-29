@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Tiled ArcGIS MapServer</title>
+  <!-- The line below is only needed for old environments like Internet Explorer and Android 4.x -->
+  <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=fetch,requestAnimationFrame,Element.prototype.classList,URL"></script>
+  <style>
+    .map {
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .clear-selection {
+      position: absolute;
+      top: .5rem;
+      right: .5rem;
+    }
+
+    .clear-selection button {
+      width: 2rem !important;
+      height: 2rem !important;
+    }
+  </style>
+</head>
+<body>
+<div id="map" class="map"></div>
+<script src="index.ts"></script>
+<div class="clear-selection ol-control">
+  <button>☠️</button>
+</div>
+</body>
+</html>
